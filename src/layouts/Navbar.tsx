@@ -14,9 +14,9 @@ export default function Navbar() {
                         ["Habilidades", "/#habilidades"],
                         ["Proyectos", "/#proyectos"],
                         ["Contacto", "/#contacto"],
-                    ].map(([title, url], index) => (
+                    ].map(([title, url]) => (
                         <Link
-                        key={index}
+                            key={title}
                             href={url}
                             className="rounded-lg px-3 py-2 font-bold hover:bg-bg"
                         >
@@ -27,7 +27,6 @@ export default function Navbar() {
                 <Avatar />
             </nav>
             <div className=" left-0 right-0 top-0 flex flex-row items-center justify-between space-x-2 bg-bgdark p-4  border-bg border">
-                
                 <Avatar />
             </div>
         </>
