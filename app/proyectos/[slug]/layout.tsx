@@ -1,33 +1,28 @@
-// export const metadata = {
-//   title: 'Christian Lisantti | Desarrollador Frontend',
-//   description: 'Mi portafolio.',
-// }
-
 import { ProyectsData } from "@/src/data/ProyectsData";
-
 import { Metadata, ResolvingMetadata } from "next";
 
 type Props = {
-    params: { slug: string };
+  params: { slug: string };
 };
 
 export async function generateMetadata(
-    { params }: Props,
-    parent?: ResolvingMetadata
+  { params }: Props,
+  parent?: ResolvingMetadata
 ): Promise<Metadata> {
-    // read route params
-    const slug = params.slug.replace(/-/g, " ");
-    const proyecto = ProyectsData.find((p) => p.page.toLowerCase() === slug);
+  // leer los parámetros de la ruta
+  const slug = params.slug.replace(/-/g, " ");
+  const proyecto = ProyectsData.find((p) => p.page.toLowerCase() === slug);
 
-    return {
-        title: `${proyecto?.title} | Christian Lisantti`,
-    };
+  return {
+    title: `${proyecto?.title} | Christian Lisantti`,
+    description: "Mi portafolio", // Agrega la descripción aquí
+  };
 }
 
 export default function RootProyect({
-    children,
+  children,
 }: {
-    children: React.ReactNode;
+  children: React.ReactNode;
 }) {
-    return <>{children}</>;
+  return <>{children}</>;
 }
