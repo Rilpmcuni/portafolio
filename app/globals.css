@@ -1,0 +1,119 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+html,
+body {
+    max-width: 100vw;
+    overflow-x: hidden;
+
+}
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+body {
+    color: #f0e3ca;
+    background: #21221c;
+}
+
+@media (prefers-color-scheme: dark) {
+    html {
+        color-scheme: dark;
+    }
+}
+/*  */
+@keyframes animado {
+    0% {
+        border-radius: 47% 53% 22% 78% / 59% 69% 31% 41%;
+    }
+    10% {
+        border-radius: 72% 28% 32% 68% / 37% 32% 68% 63%;
+    }
+    20% {
+        border-radius: 33% 67% 32% 68% / 37% 32% 68% 63%;
+    }
+    30% {
+        border-radius: 33% 67% 62% 38% / 37% 77% 23% 63%;
+    }
+    40% {
+        border-radius: 38% 62% 62% 38% / 66% 63% 37% 34%;
+    }
+    50% {
+        border-radius: 32% 68% 62% 38% / 30% 43% 57% 70%;
+    }
+    60% {
+        border-radius: 62% 38% 30% 70% / 68% 63% 37% 32%;
+    }
+    70% {
+        border-radius: 62% 38% 29% 71% / 26% 30% 70% 74%;
+    }
+    80% {
+        border-radius: 22% 78% 29% 71% / 45% 54% 46% 55%;
+    }
+    90% {
+        border-radius: 32% 68% 68% 32% / 68% 72% 28% 32%;
+    }
+    100% {
+        border-radius: 63% 37% 32% 68% / 64% 67% 33% 36%;
+    }
+}
+@keyframes bgAnimado {
+    0% {
+        border-radius: 47% 53% 22% 78% / 59% 69% 31% 41%;
+    }
+    10% {
+        border-radius: 72% 28% 32% 68% / 37% 32% 68% 63%;
+    }
+    20% {
+        border-radius: 33% 67% 32% 68% / 37% 32% 68% 63%;
+    }
+    30% {
+        border-radius: 33% 67% 62% 38% / 37% 77% 23% 63%;
+    }
+    40% {
+        border-radius: 38% 62% 62% 38% / 66% 63% 37% 34%;
+    }
+    50% {
+        transform: rotate(1turn);
+        transform: translate(120px, 50%);
+        border-radius: 32% 68% 62% 38% / 30% 43% 57% 70%;
+    }
+    60% {
+        border-radius: 62% 38% 30% 70% / 68% 63% 37% 32%;
+    }
+    70% {
+        border-radius: 62% 38% 29% 71% / 26% 30% 70% 74%;
+    }
+    80% {
+        border-radius: 22% 78% 29% 71% / 45% 54% 46% 55%;
+    }
+    90% {
+        border-radius: 32% 68% 68% 32% / 68% 72% 28% 32%;
+    }
+    100% {
+        transform: rotate(0turn);
+        transform: translate(0px, 0%);
+        border-radius: 63% 37% 32% 68% / 64% 67% 33% 36%;
+    }
+}
+/* animación jumbotron */
+.container-logo-1 {
+    animation: animado 10s alternate infinite;
+    transform: rotate(0.5turn);
+}
+
+.container-logo-2 {
+    animation: animado 10s alternate infinite;
+    transform: rotate(0.25turn);
+}
+
+.container-logo-3 {
+    transform: rotate(0.25turn);
+}
+.frog {
+    border-radius: 71% 29% 36% 64% / 29% 23% 77% 71%;
+    animation: animado 10s alternate infinite;
+}
