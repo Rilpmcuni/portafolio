@@ -2,27 +2,28 @@ import { ProyectsData } from "@/src/data/ProyectsData";
 import { Metadata, ResolvingMetadata } from "next";
 
 type Props = {
-  params: { slug: string };
-};
+    params: { slug: string };
+    searchParams: { [key: string]: string | string[] | undefined };
+  };
 
 export async function generateMetadata(
-  { params }: Props,
-  parent?: ResolvingMetadata
+  { params, searchParams }: Props,
+  parent?: ResolvingMetadata,
 ): Promise<Metadata> {
-  // leer los parámetros de la ruta
-  const slug = params.slug.replace(/-/g, " ");
-  const proyecto = ProyectsData.find((p) => p.page.toLowerCase() === slug);
+    // leer los parámetros de la ruta
+    const slug = params.slug.replace(/-/g, " ");
+    const proyecto = ProyectsData.find((p) => p.page.toLowerCase() === slug);
 
-  return {
-    title: `${proyecto?.title} | Christian Lisantti`,
-    description: "Mi portafolio", // Agrega la descripción aquí
-  };
+    return {
+        title: `${proyecto?.title} | Christian Lisantti`,
+        description: "Mi portafolio", // Agrega la descripción aquí
+    };
 }
 
 export default function RootProyect({
-  children,
+    children,
 }: {
-  children: React.ReactNode;
+    children: React.ReactNode;
 }) {
-  return <>{children}</>;
+    return <>{children}</>;
 }
