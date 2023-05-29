@@ -45,17 +45,17 @@ const Footer = () => {
                                 }
                             >
                                 <EnvelopeClosedIcon />{" "}
-                                christian.lisantti@gmail.com
+                                fabian.lisantti@gmail.com
                                 <div className="font-bold text-brand opacity-0 group-hover:opacity-100">
                                     <CopyIcon />
                                 </div>
                             </span>
                             <Link
                                 className="text-text-100 group flex items-center gap-1 hover:text-brand"
-                                href="https://github.com/Incmplir/"
+                                href="https://github.com/Rilpmcuni/"
                                 target="_blank"
                             >
-                                <GitHubLogoIcon /> @Incmplir
+                                <GitHubLogoIcon /> @Rilpmcuni
                                 <div className="font-bold text-brand opacity-0 group-hover:opacity-100">
                                     <ExternalLinkIcon />
                                 </div>

@@ -5,7 +5,7 @@ import Footer from '@/src/layouts/Footer'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
-  title: 'Christian Lisantti | Desarrollador Frontend',
+  title: 'Fabian Lisantti | Desarrollador Frontend',
   description: 'Mi portafolio.',
 }
 

@@ -29,7 +29,7 @@ export async function generateMetadata({
     const proyecto = ProyectsData.find((p) => p.page.toLowerCase() === slug);
 
     return {
-        title: `${proyecto?.title} | Christian Lisantti`,
+        title: `${proyecto?.title} | Fabian Lisantti`,
         description: proyecto?.description, // Agrega la descripción aquí
     };
 }
