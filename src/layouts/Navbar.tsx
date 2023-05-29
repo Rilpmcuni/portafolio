@@ -14,8 +14,9 @@ export default function Navbar() {
                         ["Habilidades", "/#habilidades"],
                         ["Proyectos", "/#proyectos"],
                         ["Contacto", "/#contacto"],
-                    ].map(([title, url]) => (
+                    ].map(([title, url], index) => (
                         <Link
+                        key={index}
                             href={url}
                             className="rounded-lg px-3 py-2 font-bold hover:bg-bg"
                         >
