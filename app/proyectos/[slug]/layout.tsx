@@ -30,7 +30,7 @@ export async function generateMetadata({
 
     return {
         title: `${proyecto?.title} | Christian Lisantti`,
-        description: "Mi portafolio", // Agrega la descripción aquí
+        description: proyecto?.description, // Agrega la descripción aquí
     };
 }
 /*  */
