@@ -4,11 +4,11 @@ import { Metadata, ResolvingMetadata } from "next";
 type Props = {
     params: { slug: string };
     searchParams: { [key: string]: string | string[] | undefined };
-  };
-
+};
+/* eslint-disable import/prefer-default-export */
 export async function generateMetadata(
-  { params, searchParams }: Props,
-  parent?: ResolvingMetadata,
+    { params, searchParams }: Props,
+    parent?: ResolvingMetadata
 ): Promise<Metadata> {
     // leer los parámetros de la ruta
     const slug = params.slug.replace(/-/g, " ");
@@ -19,6 +19,7 @@ export async function generateMetadata(
         description: "Mi portafolio", // Agrega la descripción aquí
     };
 }
+/* eslint-enable import/prefer-default-export */
 
 export default function RootProyect({
     children,
