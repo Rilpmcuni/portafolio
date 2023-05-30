@@ -5,7 +5,7 @@ const Jumbotron = () => {
     return (
         <>
             <section className="flex sm:flex-row flex-col w-11/12 h-[70vh] z-10 items-center justify-evenly sm:my-12 my-6">
-                <div className="flex flex-col">
+                <div className="flex flex-col mb-12">
                     <h1 className="text-brand text-5xl font-black">
                         Fabian Lisantti
                     </h1>
