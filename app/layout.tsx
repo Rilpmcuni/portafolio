@@ -25,7 +25,7 @@ export const metadata = {
     description: "Mi portafolio.",
     url: "http://www.fabian-lisantti.vercel.app",
     images: "/image.png",
-    siteName: "Next.js",
+    siteName: "Lisantti Fronten",
     locale: "es_CL",
     type: "website",
   },
