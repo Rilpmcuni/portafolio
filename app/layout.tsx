@@ -11,7 +11,6 @@ export const metadata = {
     title: "Fabian Lisantti | Desarrollador Frontend",
     description: "Mi portafolio.",
     url: "fabian-lisantti.vercel.app",
-    images: ["./image.webp"],
   },
 };
 
