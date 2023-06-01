@@ -2,6 +2,7 @@ import "./globals.css";
 import { Inter } from "next/font/google";
 import Navbar from "@/src/layouts/Navbar";
 import Footer from "@/src/layouts/Footer";
+import image from "@/app/image.png";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
@@ -24,7 +25,7 @@ export const metadata = {
     title: "Fabian Lisantti | Desarrollador Frontend",
     description: "Mi portafolio.",
     url: "http://www.fabian-lisantti.vercel.app",
-    images: "./image.png",
+    images: ["@/app/image.png"],
     siteName: "Next.js",
     locale: "es_CL",
     type: "website",
@@ -50,27 +51,28 @@ export const metadata = {
     siteId: "1467726470533754880",
     creator: "@Rilpmcuni",
     creatorId: "1467726470533754880",
-        images: {
-      url: './image.png',
-      alt: '@Rilpmcuni',
+    images: {
+      url: "@/app/image.png",
+      alt: "@Rilpmcuni",
     },
-    
   },
-    viewport: {
-    width: 'device-width',
+  viewport: {
+    width: "device-width",
     initialScale: 1,
     maximumScale: 1,
   },
-    verification: {
-    google: 'google',
-    yandex: 'yandex',
-    yahoo: 'yahoo',
+  verification: {
+    google: "google",
+    yandex: "yandex",
+    yahoo: "yahoo",
     other: {
-      me: ['fabian.lisantti@gmail.com', 'http://www.fabian-lisantti.vercel.app'],
+      me: [
+        "fabian.lisantti@gmail.com",
+        "http://www.fabian-lisantti.vercel.app",
+      ],
     },
-    
   },
-  category: 'technology',
+  category: "technology",
 };
 
 export default function RootLayout({
