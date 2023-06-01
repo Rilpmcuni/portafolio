@@ -1,30 +1,33 @@
-import './globals.css'
-import { Inter } from 'next/font/google'
-import Navbar from '@/src/layouts/Navbar'
-import Footer from '@/src/layouts/Footer'
-const inter = Inter({ subsets: ['latin'] })
+import "./globals.css";
+import { Inter } from "next/font/google";
+import Navbar from "@/src/layouts/Navbar";
+import Footer from "@/src/layouts/Footer";
+const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: 'Fabian Lisantti | Desarrollador Frontend',
-  description: 'Mi portafolio.',
-}
-
-
-
+  title: "Fabian Lisantti | Desarrollador Frontend",
+  description: "Mi portafolio.",
+  openGraph: {
+    title: "Fabian Lisantti | Desarrollador Frontend",
+    description: "Mi portafolio.",
+    url: "fabian-lisantti.vercel.app",
+    images: "./image.webp",
+  },
+};
 
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode
+  children: React.ReactNode;
 }) {
   return (
     <html lang="es">
       <body className={inter.className}>
-      <Navbar/>
-        
+        <Navbar />
+
         {children}
-        <Footer/>
-        </body>
+        <Footer />
+      </body>
     </html>
-  )
+  );
 }
