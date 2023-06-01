@@ -2,7 +2,6 @@ import "./globals.css";
 import { Inter } from "next/font/google";
 import Navbar from "@/src/layouts/Navbar";
 import Footer from "@/src/layouts/Footer";
-import image from "@/app/image.png";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
@@ -25,7 +24,7 @@ export const metadata = {
     title: "Fabian Lisantti | Desarrollador Frontend",
     description: "Mi portafolio.",
     url: "http://www.fabian-lisantti.vercel.app",
-    images: ["@/app/image.png"],
+    images: "/image.png",
     siteName: "Next.js",
     locale: "es_CL",
     type: "website",
@@ -52,7 +51,7 @@ export const metadata = {
     creator: "@Rilpmcuni",
     creatorId: "1467726470533754880",
     images: {
-      url: "@/app/image.png",
+      url: "/image.png",
       alt: "@Rilpmcuni",
     },
   },
