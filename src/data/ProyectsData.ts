@@ -24,17 +24,17 @@ export const ProyectsData = [
     ],
   },
   {
-    title: "Rilpni",
-    page: "rilpni",
+    title: "Reviasa",
+    page: "reviasa",
     badge: ["Next.js 13", "Supabase"],
     description:
       "Otro proyecto ambicioso que desarrollollo desde hace un tiempo.",
     bgProyect: [proyectRilpni],
     bgCard: [proyectRilpni],
     parraph:
-      "Proyecto TamizLA - Este es un proyecto ambicioso que he estado desarrollando durante algún tiempo. TamizLA es una solución tecnológica para profesionales laboratoristas que buscan mejorar la eficiencia en su trabajo. Al utilizar tecnologías modernas como Next.js, Tailwind CSS, Auth0 y Firebase, he creado un sistema que incluye características como material de estudio, seguimiento de ensayos, informes mensuales y más. Con TamizLA, los profesionales laboratoristas pueden ahorrar tiempo y aumentar la precisión en su trabajo, lo que resulta en una mayor satisfacción del cliente y una mayor eficiencia en general. Estoy emocionado de agregar TamizLA a mi portafolio, ya que demuestra mi capacidad para crear soluciones tecnológicas útiles y efectivas para problemas del mundo real.",
+      "Proyecto Reviasa - Este es un proyecto ambicioso que he estado desarrollando durante algún tiempo. TamizLA es una solución tecnológica para profesionales laboratoristas que buscan mejorar la eficiencia en su trabajo. Al utilizar tecnologías modernas como Next.js, Tailwind CSS, Auth0 y Firebase, he creado un sistema que incluye características como material de estudio, seguimiento de ensayos, informes mensuales y más. Con TamizLA, los profesionales laboratoristas pueden ahorrar tiempo y aumentar la precisión en su trabajo, lo que resulta en una mayor satisfacción del cliente y una mayor eficiencia en general. Estoy emocionado de agregar TamizLA a mi portafolio, ya que demuestra mi capacidad para crear soluciones tecnológicas útiles y efectivas para problemas del mundo real.",
     links: [
-      "http://tamiz-la.vercel.app/",
+      "http://reviasa.vercel.app/",
       "https://github.com/Incmplir/tamizla-next",
     ],
   },
